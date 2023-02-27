@@ -5,8 +5,8 @@ import ContactForm from './ContactForm/ContactForm';
 import FindContact from './FindContact/FindContact';
 import Button from 'Modules/Button/Button';
 
-import { addContacts, deleteContacts } from 'redux/contacts/contacts-actions';
-import { setFilter } from 'redux/filter/filter-actions';
+import { addContacts, deleteContacts } from 'redux/contacts/contacts-slice';
+import { setFilter } from 'redux/filter/filter-slice';
 
 import {
   getAllContacts,
