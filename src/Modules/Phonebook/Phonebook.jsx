@@ -16,20 +16,12 @@ import {
 import { getFilter } from '../../redux/filter/filter-selectors';
 
 const Phonebook = () => {
-  // const [contacts, setContacts] = useState(() => {
-  //   const contacts = JSON.parse(localStorage.getItem('phonebook'));
-  //   return contacts ? contacts : [];
-  // });
 
   const contactsFilter = useSelector(getFilterContacts);
   const contacts = useSelector(getAllContacts);
   const filter = useSelector(getFilter);
 
   const dispatch = useDispatch();
-
-  // useEffect(() => {
-  //   localStorage.setItem('phonebook', JSON.stringify(contacts));
-  // }, [contacts]);
 
   const handleAddContact = ({ name, number }) => {
     //----------------------  add friends filter ???
